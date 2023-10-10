@@ -1,5 +1,5 @@
 ## Airbnb Rental Price Prediction
-##read me
+## read me
 The primary objective of this report is to conduct a comprehensive analysis of the Sydney Airbnb rental dataset, with a focus on identifying the most impactful features. This dataset has been divided into two sets: a training dataset comprising 12,941 rows and 61 columns and a test dataset containing 5,547 rows. Given the dataset's size and complexity, I have categorized it into three distinct groups: host & host listings, property, and review data. This categorization streamlines my data analysis process, making it more efficient.
 
 My research is centered around the variable 'price.' An initial examination of the dataset revealed that the relationship between price and its frequency follows a right-skewed distribution, with a significant concentration of rental prices falling within the range of 0 to 1000. To improve model performance and better fit the data, I have employed a standardization technique, transforming the price variable into a logarithmic form.
