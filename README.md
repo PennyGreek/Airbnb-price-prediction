@@ -1,18 +1,18 @@
-# Airbnb rental price prediction
-## Results
-Based on our analysis, we identify key factors influencing house prices on Airbnb: location, accommodation capacity, and amenities. Particularly, accommodates has the most substantial impact, with a correlation coefficient of 0.64, indicating that larger properties tend to command higher prices. To enhance customer loyalty, hosts can focus on delivering high-quality services, adapting to changing circumstances, and effective communication, as suggested by Lee and Deale (2021). This strategy can foster profitability and customer loyalty for Airbnb, especially in a post-pandemic context.
-## Methodology
-In this section, we outline our approach to predicting Airbnb's home rental prices using various machine learning models. We aim to identify the best-performing model for this task. Our model selection includes Ordinary Least Squares (OLS), Ridge, Lasso, Random Forest, and XGBoost. To establish a baseline for comparison, we also employ a simple yet effective method—multi-linear regression.
+Airbnb Rental Price Prediction
+Results
+Key factors influencing house prices on Airbnb have been identified through the analysis: location, accommodation capacity, and amenities. In particular, the impact of "accommodates" is the most substantial, as indicated by a correlation coefficient of 0.64, revealing that higher prices tend to be commanded by larger properties. To enhance customer loyalty, a focus can be placed on the delivery of high-quality services, adaptability to changing circumstances, and the facilitation of effective communication, as suggested by Lee and Deale (2021). The implementation of this strategy can lead to profitability and customer loyalty for Airbnb, especially in a post-pandemic context.
 
-To evaluate the models' performance, we use Root Mean Square Logarithmic Error (RMSLE). This metric emphasizes the penalty for underestimating true values, which is more detrimental in a business context than overestimation.
+Methodology
+An outline is provided for the approach taken in predicting Airbnb's home rental prices using various machine-learning models. The objective is to determine the best-performing model for this task. The model selection encompasses Ordinary Least Squares (OLS), Ridge, Lasso, Random Forest, and XGBoost. To establish a baseline for comparison, a straightforward yet effective method—multi-linear regression—is also employed.
 
-## Model Performance
-The following table displays the RMSLE results for our models, with XGBoost achieving the lowest error:
+To evaluate the performance of the models, Root Mean Square Logarithmic Error (RMSLE) is utilized. This metric places a greater emphasis on the penalty associated with underestimating true values, a consideration of greater significance in a business context than overestimation.
+
+Model Performance
+The RMSLE results for our models are presented in the following table, with the lowest error achieved by XGBoost:
 
 Model	XGBoost	Random Forest	Ridge	OLS	Lasso
 RMSLE	0.386	0.389	0.410	0.410	0.410
-The prediction process involves importing the necessary libraries, performing a train-test split, and generating the final predictions using the test set. The model's output is then submitted to Kaggle to obtain validation scores.
-
+The prediction process entails the importation of the necessary libraries, the execution of a train-test split, and the generation of final predictions using the test dataset. Subsequently, the model's output is submitted to Kaggle for the acquisition of validation scores.
 
 
 
